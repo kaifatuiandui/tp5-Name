@@ -18,7 +18,6 @@ class Index extends Controller {
         return $this->fetch();
     }
     private function redisConnect() {
-        echo 3232;
         $redis = new \Redis();
         $redis->connect('127.0.0.1', 6379);
         return $redis;
